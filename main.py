@@ -1,10 +1,10 @@
 import argparse, os
 from dotenv import load_dotenv
-from howlradar.platforms.hackerone import fetch as fetch_hackerone
-from howlradar.platforms.bugcrowd import fetch as fetch_bugcrowd
-from howlradar.platforms.immunefi import fetch as fetch_immunefi
-from howlradar.platforms.yeswehack import fetch as fetch_yeswehack
-from howlradar.platforms.integriti import fetch as fetch_integriti
+from platforms.hackerone import fetch_hackerone
+from platforms.bugcrowd import fetch_bugcrowd
+from platforms.immunefi import fetch_immunefi
+from platforms.yeswehack import fetch_yeswehack
+from platforms.intigriti import fetch_intigriti
 from filter import apply_filters
 from utils import load_cache, save_cache
 from notify.discord import send_discord
