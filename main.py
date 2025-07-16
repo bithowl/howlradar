@@ -4,7 +4,7 @@ from platforms.hackerone import fetch_hackerone
 from platforms.bugcrowd import fetch_bugcrowd
 from platforms.immunefi import fetch_immunefi
 from platforms.yeswehack import fetch_yeswehack
-from platforms.integriti import fetch_integriti
+from platforms.integriti import fetch_intigriti
 from filter import apply_filters
 from utils import load_cache, save_cache
 from notify.discord import send_discord
@@ -63,7 +63,7 @@ def main():
         fetchers.append(fetch_immunefi)
     if not wanted_platforms or 'yeswehack' in wanted_platforms:
         fetchers.append(fetch_yeswehack)
-    if not wanted_platforms or 'integriti' in wanted_platforms:
+    if not wanted_platforms or 'intigriti' in wanted_platforms:
         fetchers.append(fetch_integriti)
 
     programs = []
