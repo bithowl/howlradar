@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 
 def fetch_bugcrowd():
     out = []
-    url = 'https://www.bugcrowd.com/programs/'
+    url = 'https://www.bugcrowd.com/engagements/'
     resp = requests.get(url)
     soup = BeautifulSoup(resp.text, 'html.parser')
     cards = soup.select('div.program-card')
