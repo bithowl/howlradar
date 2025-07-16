@@ -2,7 +2,7 @@ import requests
 
 def fetch_immunefi():
     out = []
-    url = 'https://immunefi.com/bounty-programs/'
+    url = 'https://immunefi.com/bug-bounty/'
     resp = requests.get(url)
     programs = resp.json().get('programs', [])
     for p in programs:
