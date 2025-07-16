@@ -64,7 +64,7 @@ def main():
     if not wanted_platforms or 'yeswehack' in wanted_platforms:
         fetchers.append(fetch_yeswehack)
     if not wanted_platforms or 'intigriti' in wanted_platforms:
-        fetchers.append(fetch_integriti)
+        fetchers.append(fetch_intigriti)
 
     programs = []
     for fetch in fetchers:
