@@ -1,7 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
 
-def fetch_integriti():
+def fetch_intigriti():
     out = []
     url = 'https://app.intigriti.com/researcher/dashboard'
     resp = requests.get(url)
@@ -18,7 +18,7 @@ def fetch_integriti():
             minb = int(m.group(1).replace(',', ''))
             maxb = minb
         out.append({
-            'platform':'Integriti',
+            'platform':'Intigriti',
             'name': name,
             'url': link,
             'bounty_min': minb,
