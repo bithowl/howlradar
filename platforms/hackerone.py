@@ -2,7 +2,7 @@ import requests, feedparser, re
 
 def fetch_hackerone():
     out = []
-    feed = feedparser.parse('https://hackerone.com/blog.rss')
+    feed = feedparser.parse('https://hackerone.com/opportunities/all')
     for e in feed.entries:
         if 'launch' not in e.title.lower():
             continue
